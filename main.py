@@ -8,6 +8,7 @@ import query_in_functions
 ddate = datetime.date.today()
 date = str(ddate)
 
+# add comment here
 
 
 class Application(object):
