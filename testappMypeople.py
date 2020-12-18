@@ -53,7 +53,7 @@ class MyPeople(Toplevel):
         for person in persons:
             self.listBox.insert(count, str(person[0]) + ". " + person[1] + " " + person[2])
             count += 1
-        self.scroll.grid(row=0, column=1, sticky=N+S)
+        self.scroll.grid(row=0, column=1, sticky=NS)
 
         # Buttons
 
