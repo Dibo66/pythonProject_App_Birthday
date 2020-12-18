@@ -6,8 +6,8 @@ import query_in_functions
 class Birthday(Toplevel):
     def __init__(self):
         Toplevel.__init__(self)
-        self.geometry("650x500+600+200")
-        self.title("My People")
+        self.geometry("650x585+600+100")
+        self.title("Birthday's today")
         self.resizable(False, False)
 
         self.top = Frame(self, height=150, bg='white')
@@ -20,14 +20,14 @@ class Birthday(Toplevel):
         self.top_image_lable = Label(self.top, image=self.top_image, bg='white')
         self.top_image_lable.place(x=130, y=25)
 
-        self.heading = Label(self.top, text="Birthday's today"
-                             , font='arial 15 bold', bg='white', fg='#ebb434')
+        self.heading = Label(self.top, text="Birthday's today", font='arial 15 bold', bg='white', fg='#ebb434')
         self.heading.place(x=270, y=50)
 
         self.scroll = Scrollbar(self.bottom, orient=VERTICAL)
 
-        self.listBox = Listbox(self.bottom, width=55, height=27)
+        self.listBox = Listbox(self.bottom, width=40, height=27)
         self.listBox.grid(row=0, column=0, padx=(40, 0))
+
         self.scroll.config(command=self.listBox.yview)
         self.listBox.config(yscrollcommand=self.scroll.set)
 

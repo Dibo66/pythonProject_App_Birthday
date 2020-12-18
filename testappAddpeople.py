@@ -8,7 +8,7 @@ import query_in_functions
 class AddPeople(Toplevel):
     def __init__(self):
         Toplevel.__init__(self)
-        self.geometry("650x650+600+80")
+        self.geometry("650x600+600+100")
         self.title("Add new Person")
         self.resizable(False, False)
 

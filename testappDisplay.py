@@ -9,7 +9,7 @@ date = str(date)
 class Display(Toplevel):
     def __init__(self, person_id):
         Toplevel.__init__(self)
-        self.geometry("650x650+600+200")
+        self.geometry("650x600+600+100")
         self.title("Display person")
         self.resizable(False, False)
         print("person id = ", person_id)

@@ -10,7 +10,7 @@ import query_in_functions
 class MyPeople(Toplevel):
     def __init__(self):
         Toplevel.__init__(self)
-        self.geometry("650x585+600+80")
+        self.geometry("650x585+600+100")
         self.title("My People")
         self.resizable(False, False)
 

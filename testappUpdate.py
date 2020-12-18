@@ -7,7 +7,7 @@ import query_in_functions
 class Update(Toplevel):
     def __init__(self, person_id):
         Toplevel.__init__(self)
-        self.geometry("650x650+600+200")
+        self.geometry("650x585+600+100")
         self.title("Update person")
         self.resizable(False, False)
         print("person id = ", person_id)
@@ -90,7 +90,7 @@ class Update(Toplevel):
 
         # Button
         button = Button(self.bottom, text="Update person", command=self.update_people)
-        button.place(x=270, y=450)
+        button.place(x=270, y=350)
 
     def update_people(self):
         id = self.person_id

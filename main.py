@@ -77,7 +77,7 @@ def main():
     root = Tk()
     app = Application(root)
     root.title("PhoneBook App")
-    root.geometry("650x550+350+200")
+    root.geometry("650x550+350+100")
     root.resizable(False, False)
 
     root.mainloop()
