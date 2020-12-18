@@ -40,7 +40,7 @@ class Birthday(Toplevel):
         for person in persons:
             self.listBox.insert(count, str(person[0]) + ". " + person[1] + " " + person[3] + " " + person[4])
             count += 1
-        self.scroll.grid(row=0, column=1, sticky=N + S)
+        self.scroll.grid(row=0, column=1, sticky=NS)
 
         btnSent = MyButton(self.bottom, text='Sent', command=self.email_person)
         btnSent.grid(row=0, column=2, padx=20, pady=10, sticky=N)
