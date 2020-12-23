@@ -57,7 +57,7 @@ class Birthday(Toplevel):
 
         smtp_server = "smtp.gmail.com"
         port = 587
-        email = "d???????06@gmail.com"  # the email where you sent the email
+        email = input("Type your email: ")     ##"d??????????@ggmmail.com"  # the email where you sent the email
         password = input("Type your password and press enter: ")
         sent_to_email = f"{email_id}"  # for whom
         subject = "Test from Python"
