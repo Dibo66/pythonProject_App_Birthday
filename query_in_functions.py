@@ -189,4 +189,10 @@ def delete_Sqlite_Record(personId):
         if (conn):
             conn.close()
             print("sqlite connection is closed")
+# ==================================================
 
+
+with sqlite3.connect('database.db') as conn:
+    cursor = conn.cursor()
+    query = """CREATE TABLE IF NOT EXISTS expense(id INTEGER, name TEXT)"""
+    cursor.execute(query)
