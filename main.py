@@ -78,7 +78,7 @@ def main():
     app = Application(root)
     root.title("PhoneBook App")
     root.geometry("650x550+350+100")
-    root.resizable(False, False)
+    root.resizable(False, False) # create coommit
 
     root.mainloop()
 
